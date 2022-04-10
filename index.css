@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    box-sizing: border-box;
+    display: table-row;
+}
+.image1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+#image1 img {
+    max-width: 100%;
+    height: auto;
+}
+#marvelLogo { 
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+#marvelLogo img {
+    width: 400px;  
+    height: auto;
+    margin-top: -200px;
+    background-color: transparent;
+}
+.contentContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.contentMovie {
+    width: 252px;
+    height: 369px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 152px;
+    display: flex;
+    justify-content: center;
+}
+#contentImage {
+    position: absolute;
+    width: 216px;
+    height: 324px;
+    border-top: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    margin-top: -45px;
+    display: flex;
+    align-items: center;
+}
+.contentMovie div img{
+    margin-top: 20px;
+}
+#title{
+    margin-top: 310px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.09px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Responsive Design Laptop Device */
+@media only screen and (max-width:996px){
+    #contentImage{
+        width: 140px;
+        height: 240px;
+    }
+    #contentImage img{
+        width: 140px;
+        height: 240px;
+        box-sizing: border-box;
+    }
+    .contentMovie{
+        width: 170px;
+        height: 280px;
+    }
+    #title{
+        margin-top: 230px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+/* Responsive Design Tablet Device */
+@media only screen and (max-width:767px){
+    #marvelLogo img {
+        width: 250px;  
+        height: auto;
+        margin-top: -110px;
+        background-color: transparent;
+    }
+    #contentImage{
+        width: 200px;
+        height: 350px;
+    }
+    #contentImage img{
+        width: 200px;
+        height: 350px;
+        box-sizing: border-box;
+    }
+    .contentContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .contentMovie{
+        width: 240px;
+        height: 420px;
+        display: flex;
+        justify-content: center;
+    }
+    #title{
+        margin-top: 360px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+/* Responsive Design Mobile Device */
+@media only screen and (max-width:430px){
+    #marvelLogo img {
+        width: 100px;
+        height: auto;
+        margin-top: -100px;
+        background-color: transparent;
+    }
+    #contentImage{
+        width: 150px;
+        height: 200px;
+    }
+    #contentImage img{
+        width: 150px;
+        height: 230px;
+        box-sizing: border-box;
+    }
+    .contentContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .contentMovie{
+        width: 200px;
+        height: 260px;
+    }
+    .contentMovie div img {
+        margin-top: 40px;
+    }
+    #title{
+        margin-top: 210px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    ul li.pageNumber {
+        width: 25px;
+        height: 48px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
